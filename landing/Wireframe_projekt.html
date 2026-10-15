@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Můj projekt</title>
     <link rel="stylesheet" href="Wireframe_CSS.css">
 </head>
-
 <body>
 
     <header>
@@ -16,67 +16,96 @@
             <div class="menu">
                 <a href="#uvod">Úvod</a>
                 <a href="#projekt">Projekt</a>
-                <a href="#funkce">Funkce</a>
+
+                <div class="dropdown">
+                    <a href="#funkce">Funkce ▼</a>
+
+                    <div class="dropdown-menu">
+                        <a href="#jednoduchost">Jednoduchost</a>
+                        <a href="#navigace">Navigace</a>
+                        <a href="#responzivita">Responzivita</a>
+                    </div>
+                </div>
+
                 <a href="#kontakt">Kontakt</a>
             </div>
         </nav>
-        
     </header>
 
-
     <main>
-
         <section id="uvod" class="hero">
             <h1>Můj projekt</h1>
-            <p> landing page </p>
+            <p>Vítejte na mé webové stránce.</p>
             <a href="#projekt" class="button">Zjistit více</a>
         </section>
 
+        <div class="layout">
 
-        <section id="projekt" class="section">
-            <h2>O projektu</h2>
-            <p>
-                text
-            </p>
-        </section>
+            <div class="obsah">
+                <section id="projekt" class="section">
+                    <h2>O projektu</h2>
+                    <p>
+                        Toto je můj školní projekt vytvořený pomocí HTML5
+                        a CSS3. Stránka obsahuje navigaci a responzivní design.
+                    </p>
+                </section>
 
+                <section id="funkce" class="section">
+                    <h2>Hlavní funkce</h2>
 
-        <section id="funkce" class="section">
-            <h2>Hlavní Funkce</h2>
+                    <div class="cards">
+                        <div class="card" id="jednoduchost">
+                            <h3>Jednoduchost</h3>
+                            <p>Stránka má jednoduchý a přehledný vzhled.</p>
+                        </div>
 
-            <div class="cards">
+                        <div class="card" id="navigace">
+                            <h3>Navigace</h3>
+                            <p>Pomocí menu lze přejít na různé části stránky.</p>
+                        </div>
 
-                <div class="card">
-                    <h3>Funkce</h3>
-                    <p>text</p>
-                </div>
-
-                <div class="card">
-                    <h3>Funkce</h3>
-                    <p>text</p>
-                </div>
-
-                <div class="card">
-                    <h3>Funkce</h3>
-                    <p>text</p>
-                </div>
-
+                        <div class="card" id="responzivita">
+                            <h3>Responzivita</h3>
+                            <p>Web se přizpůsobí velikosti obrazovky.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
 
+            <aside>
+                <h3>Rychlé odkazy</h3>
+                <a href="#uvod">Úvod</a>
+                <a href="#projekt">O projektu</a>
+                <a href="#funkce">Hlavní funkce</a>
+            </aside>
+
+        </div>
 
         <section id="kontakt" class="section contact">
             <h2>Kontakt</h2>
-            <p>text</p>
+            <p>V případě dotazů nám napište.</p>
             <a href="mailto:email@example.com" class="button">Napsat nám</a>
         </section>
-
     </main>
 
-
     <footer>
+        <div>
+            <h3>Dokumenty</h3>
+            <a href="#projekt">O projektu</a>
+            <a href="#funkce">Funkce</a>
+        </div>
+
+        <div>
+            <h3>Kontakty</h3>
+            <p>email@example.com</p>
+        </div>
+
+        <div>
+            <h3>Sociální sítě</h3>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
     </footer>
 
 </body>
 </html>
-```
